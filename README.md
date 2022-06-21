@@ -20,4 +20,6 @@ A calender schedule to organize your day
 - The time stamp is not follow the current hour. It is 5 hours earlier of the current time.
 ## Live link [Calender-Schedule]()
 
-### Screenshot []()
+### Display Date [Display Date](/assets/image/Display%20current%20date.jpg)
+
+### Timeblock color code and description [Timeblock color code and description](/assets/image/Timeblock%20color%20code%20and%20description.jpg)
