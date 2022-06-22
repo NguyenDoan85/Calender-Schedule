@@ -11,7 +11,7 @@
 // WHEN I refresh the page
 // THEN the saved events persist
 
-//the current day is displayed at the top of the calendar
+// the current day is displayed at the top of the calendar
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 // define save button
@@ -23,7 +23,7 @@ function timeColor() {
     var hour = moment().hours();
     $(".time-block").each(function() {
         var currentHour = parseInt($(this).attr("id"));
-        console.log(this)
+        // console.log(this)
         if (currentHour > hour) {
             $(this).addClass("future");
         } else if (currentHour === hour) {
@@ -37,7 +37,7 @@ function timeColor() {
 // click the save button for that time block
 saveBtn.on("click", function() {
 
-    console.log(this)
+    // console.log(this)
     var time = $(this).siblings(".hour").text();
     var plan = $(this).siblings(".plan").val();
 
@@ -50,7 +50,7 @@ saveBtn.on("click", function() {
 function planner() {
     $(".hour").each(function() {
     var currentHour = $(this).text();
-    console.log (this);
+    // console.log (this);
     var currentPlan = localStorage.getItem(currentHour);
     if(currentPlan !== null) {
         $(this).siblings(".plan").val(currentPlan);
